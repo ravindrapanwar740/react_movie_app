@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #405a39;
   color: white;
+  padding-top: 0px;
+  padding-bottom: 70px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 700px) {
+  .app {
+    padding-top: 70px;
   }
-  to {
-    transform: rotate(360deg);
+}
+/* 
+body{
+  background-color: burlywood;
+} */
+
+.react_movie_app > .row {
+	overflow-x: auto;
+	flex-wrap: nowrap;
+}
+
+/* .pageTitle {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1vw;
+  padding: 2px;
+  border-radius: 30px;
+  color:brown;
+  background-color: cadetblue;
+  position: sticky;
+  top: 0;
+  z-index: 100;  
+} */
+
+@media (max-width: 1000px) {
+  .pageTitle {
+    font-size: 6.4vw;
+  }
+}
+* {
+  scroll-behavior: smooth;
+}
+
+.homepage-bgimage {
+  background: url("https://wallpaperaccess.com/full/197277.jpg");
+  height: 150vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+.header {
+  width: 100%;
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: #59395a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5vw;
+  padding-bottom: 12px;
+  box-shadow: 0px 1px 5px black;
+  color: white;
+  z-index: 100;
+}
+.search_movie{
+  width: auto;
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: left;
+  position: sticky;
+  top: 0;
+  z-index: 100;  
+  float:right;
+ 
+}
+
+@media (max-width: 1000px) {
+  .header {
+    padding-top: 15px;
+    font-size: 6.4vw;
   }
 }
